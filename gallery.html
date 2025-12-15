@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nail art gallery - Browse our portfolio of custom designs">
+    <title>Gallery | Nail Art Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Nail Art Studio</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <main class="gallery-main">
+        <div class="gallery-header">
+            <h1 class="gallery-title">Gallery</h1>
+            <p class="gallery-subtitle">A showcase of custom nail art designs</p>
+        </div>
+
+        <!-- Responsive Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery items will be populated here -->
+            <!-- Using placeholder images - replace with actual nail art photos -->
+            <div class="gallery-item" data-src="https://via.placeholder.com/600x800/FFE5E5/666666?text=Design+1">
+                <img src="https://via.placeholder.com/600x800/FFE5E5/666666?text=Design+1" alt="Nail art design 1" loading="lazy">
+            </div>
+            <div class="gallery-item" data-src="https://via.placeholder.com/600x800/E5F3FF/666666?text=Design+2">
+                <img src="https://via.placeholder.com/600x800/E5F3FF/666666?text=Design+2" alt="Nail art design 2" loading="lazy">
+            </div>
+            <div class="gallery-item" data-src="https://via.placeholder.com/600x800/FFF5E5/666666?text=Design+3">
+                <img src="https://via.placeholder.com/600x800/FFF5E5/666666?text=Design+3" alt="Nail art design 3" loading="lazy">
+            </div>
+            <div class="gallery-item" data-src="https://via.placeholder.com/600x800/E5FFE5/666666?text=Design+4">
+                <img src="https://via.placeholder.com/600x800/E5FFE5/666666?text=Design+4" alt="Nail art design 4" loading="lazy">
+            </div>
+            <div class="gallery-item" data-src="https://via.placeholder.com/600x800/FFE5FF/666666?text=Design+5">
+                <img src="https://via.placeholder.com/600x800/FFE5FF/666666?text=Design+5" alt="Nail art design 5" loading="lazy">
+            </div>
+            <div class="gallery-item" data-src="https://via.placeholder.com/600x800/E5E5FF/666666?text=Design+6">
+                <img src="https://via.placeholder.com/600x800/E5E5FF/666666?text=Design+6" alt="Nail art design 6" loading="lazy">
+            </div>
+            <div class="gallery-item" data-src="https://via.placeholder.com/600x800/FFFFE5/666666?text=Design+7">
+                <img src="https://via.placeholder.com/600x800/FFFFE5/666666?text=Design+7" alt="Nail art design 7" loading="lazy">
+            </div>
+            <div class="gallery-item" data-src="https://via.placeholder.com/600x800/FFE5E5/666666?text=Design+8">
+                <img src="https://via.placeholder.com/600x800/FFE5E5/666666?text=Design+8" alt="Nail art design 8" loading="lazy">
+            </div>
+            <div class="gallery-item" data-src="https://via.placeholder.com/600x800/E5F3FF/666666?text=Design+9">
+                <img src="https://via.placeholder.com/600x800/E5F3FF/666666?text=Design+9" alt="Nail art design 9" loading="lazy">
+            </div>
+        </div>
+    </main>
+
+    <!-- Fullscreen Modal -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Fullscreen nail art">
+        <div class="modal-nav">
+            <button class="modal-prev" id="modalPrev">&#8249;</button>
+            <button class="modal-next" id="modalNext">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Nail Art Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="modal.js"></script>
+</body>
+</html>
+
