@@ -37,12 +37,27 @@
             modalClose.addEventListener('click', closeModal);
         }
 
+        // Get modal nav container
+        const modalNav = document.querySelector('.modal-nav');
+
         // Close on background click
         modal.addEventListener('click', (e) => {
+            // Only close if clicking directly on modal background, not on nav or its children
             if (e.target === modal) {
                 closeModal();
             }
         });
+
+        // Prevent nav container from closing modal when clicking in empty space between buttons
+        if (modalNav) {
+            modalNav.addEventListener('click', (e) => {
+                // Stop propagation for clicks on nav container (empty space between buttons)
+                // Button clicks are handled separately and already stop propagation
+                if (e.target === modalNav) {
+                    e.stopPropagation();
+                }
+            });
+        }
 
         // Navigation handlers
         if (modalPrev) {
