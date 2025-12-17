@@ -318,7 +318,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    pointer-events: none;
+    pointer-events: auto; /* Block clicks in nav area to prevent accidental closes */
 }
 
 .modal-prev,
